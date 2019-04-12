@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "GtrCraft/device_huawei_kirin970-common",
+    "target_path": "device/huawei/kirin970-common",
+    "branch": "9.0"
+  },
+  {
+    "remote": "github",
+    "repository": "BigTopKrazies/vendor_huawei",
+    "target_path": "vendor/huawei",
+    "branch": "9.0"
+  }
+]

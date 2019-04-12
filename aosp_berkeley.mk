@@ -21,12 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from berkeley device
 $(call inherit-product, device/huawei/berkeley/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
+
+# Boot animation res
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Use Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := berkeley
-PRODUCT_NAME := aosip_berkeley
+PRODUCT_NAME := aosp_berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MANUFACTURER := HUAWEI
 PRODUCT_MODEL := Honor View 10
